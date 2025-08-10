@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/media/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="/media/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="shortcut icon" href="/media/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="/media/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/media/favicon/site.webmanifest">
+    <meta name="theme-color" content="#41B6E6">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/recursos.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Background -->
+    <div class="recursos-background"></div>
+
+    <!-- Main Content -->
+    <main class="recursos-main">
+        <div class="container">
+            <!-- Page Header -->
+            <header class="page-header">
+                <h1 class="page-title fade-in">Recursos para Descargar</h1>
+                <p class="page-description fade-in">
+                    Materiales de estudio y recursos adicionales del Preuniversitario JMC
+                </p>
+            </header>
+        </div>
+
+        <!-- Background wrapper for glass sections -->
+        <div class="background-wrapper-primary">
+            <!-- Mountain Background Image -->
+            <div class="mountain-background"></div>
+
+            <!-- Loading State -->
+            <section class="section glass-section fade-in">
+                <div class="container">
+                    <div class="loading-section" id="loadingSection">
+                        <div class="resources-grid">
+                            <!-- Skeleton loaders for files -->
+                            <div class="resource-skeleton fade-in">
+                                <div class="skeleton skeleton-icon"></div>
+                                <div class="skeleton skeleton-filename"></div>
+                                <div class="skeleton skeleton-button"></div>
+                            </div>
+                            <div class="resource-skeleton fade-in">
+                                <div class="skeleton skeleton-icon"></div>
+                                <div class="skeleton skeleton-filename"></div>
+                                <div class="skeleton skeleton-button"></div>
+                            </div>
+                            <div class="resource-skeleton fade-in">
+                                <div class="skeleton skeleton-icon"></div>
+                                <div class="skeleton skeleton-filename"></div>
+                                <div class="skeleton skeleton-button"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Error State -->
+                    <div class="error-section" id="errorSection" style="display: none;">
+                        <div class="error-card fade-in">
+                            <span class="material-symbols-rounded error-icon">error</span>
+                            <h3>Error al cargar recursos</h3>
+                            <p>No se pudieron cargar los archivos disponibles.</p>
+                            <button class="btn-primary" onclick="location.reload()">
+                                <span class="material-symbols-rounded">refresh</span>
+                                Reintentar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Resources Grid -->
+                    <div class="resources-section fade-in" id="resourcesSection" style="display: none;">
+                        <div class="resources-grid" id="resourcesGrid">
+                            <!-- Los archivos se cargarán aquí dinámicamente -->
+                        </div>
+                    </div>
+
+                    <!-- Empty State -->
+                    <div class="empty-section" id="emptySection" style="display: none;">
+                        <div class="empty-card fade-in">
+                            <span class="material-symbols-rounded empty-icon">folder_open</span>
+                            <h3>No hay archivos disponibles</h3>
+                            <p>Actualmente no hay recursos para descargar.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/includes.js"></script>
+    <script src="/js/global.js"></script>
+    <script src="/js/recursos.js"></script>
+</body>
+
+</html>
